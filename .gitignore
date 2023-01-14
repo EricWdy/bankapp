@@ -1,0 +1,10 @@
+# node modules
+node_modules/**
+
+#submission
+submission/**
+
+#other files
+mongo_test.js
+test.js
+admin.js

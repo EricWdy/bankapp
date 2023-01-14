@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  bankdb:
+    image: mongo
+    ports:
+      - "27018:27017"
+    restart: always
+
+  server:
+    build: .
+    ports: 
+      - "3001:3001"
+    links:
+      - bankdb
+    command: node index.js
+
+  
+
